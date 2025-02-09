@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material3.Button
-import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -38,7 +37,8 @@ fun StopwatchScreen(
             .fillMaxSize()
             .wrapContentSize(
                 Alignment.Center
-            )
+            ),
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = "Jetpack Stopwatch",
@@ -77,12 +77,11 @@ fun StopwatchScreen(
                 )
             }
 
-            HorizontalDivider(
+            Spacer(
                 modifier = Modifier
                     .width(24.dp)
+                    .height(20.dp)
             )
-
-            Spacer(modifier = Modifier.height(20.dp))
 
             // Reset button
             Button(

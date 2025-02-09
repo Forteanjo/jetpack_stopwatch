@@ -1,8 +1,8 @@
-## Jetpack Stopwatch
+# Jetpack Stopwatch
 
 A simple stopwatch app written in Jetpack Compose
 
-# Features
+## Features
     - Flow emit for time capture
     - MVVM
     - Koin for view model injection (a bit overkill here)
