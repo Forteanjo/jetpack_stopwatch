@@ -4,6 +4,11 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flow
 
+/**
+ * A simple stopwatch class that can start, stop, and reset, and emits the elapsed time.
+ *
+ * This class uses a [MutableStateFlow] to emit the elapsed time as a pair of seconds and milliseconds.
+ */
 class Stopwatch {
 
     private var running: Boolean = false

@@ -8,6 +8,12 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import java.util.Locale
 
+/**
+ * ViewModel class responsible for managing the stopwatch's state and logic.
+ *
+ * This class handles the starting, stopping, resetting, and time formatting of the stopwatch.
+ * It exposes the current elapsed time and the running state as StateFlows for UI observation.
+ */
 class StopwatchViewModel : ViewModel() {
 
     private val stopwatch = Stopwatch()
